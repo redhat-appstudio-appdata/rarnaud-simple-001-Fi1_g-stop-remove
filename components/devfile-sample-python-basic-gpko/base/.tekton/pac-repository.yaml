@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: rarnaud-simple-001
+    appstudio.openshift.io/component: devfile-sample-python-basic-gpko
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: devfile-sample-python-basic-gpko
+  namespace: rarnaud-tenant
+spec:
+  url: https://github.com/Roming22/devfile-sample-python-basic
